@@ -8,7 +8,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src", "index.js"),
-    cms: path.join(__dirname, "src", "js", "cms.js"),
   },
 
   output: {
@@ -37,7 +36,7 @@ module.exports = {
 
   plugins: [
     new AssetsPlugin({
-      filename: "webpack.json",
+      filename: "webpack-assets.json",
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
     }),
@@ -48,10 +47,5 @@ module.exports = {
         flatten: true
       }
     ]),
-    new HtmlWebpackPlugin({
-      filename: 'admin/index.html',
-      template: 'src/cms.html',
-      inject: false,
-    }),
   ]
 };
