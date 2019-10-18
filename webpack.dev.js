@@ -17,6 +17,7 @@ module.exports = merge(common, {
 		port               : process.env.PORT || 3000,
 		contentBase        : path.join(process.cwd(), './dist'),
 		watchContentBase   : true,
+		writeToDisk        : true,
 		quiet              : false,
 		open               : true,
 		historyApiFallback : {
