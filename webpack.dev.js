@@ -7,7 +7,7 @@ const common = require('./webpack.common');
 
 module.exports = merge(common, {
 	mode      : 'development',
-
+	devtool   : 'none',
 	output    : {
 		filename      : '[name].js',
 		chunkFilename : '[id].css'

@@ -30,11 +30,11 @@ module.exports = {
 				test    : /\.(sa|sc|c)ss$/,
 				exclude : /node_modules/,
 				use     : [
-					'style-loader',
-					MiniCssExtractPlugin.loader,
-					'css-loader',
-					'postcss-loader',
-					'sass-loader'
+					'style-loader', // 5. Inject Styles into DOM (? currently not I guess)
+					MiniCssExtractPlugin.loader, // 4.
+					'css-loader', // 3. Turn CSS into CommonJs
+					'postcss-loader', // 2.
+					'sass-loader' // 1. Turn Sass into CSS
 				]
 			}
 		]
