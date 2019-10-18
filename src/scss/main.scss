@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 
+$primary: aqua;
+
 body {
-	background-color: aqua;
+	background-color: $primary;
 }
